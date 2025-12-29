@@ -39,7 +39,16 @@ const Project = () => {
     live: "https://satyamrathod45.github.io/decimalTv",
   }}
 />
-
+<ProjectCard
+  image={onepiece}
+  badge="Showcase"
+  title="OnePiece Showcase"
+  description="A themed showcase website inspired by One Piece, featuring animations, character sections, and immersive visuals."
+  projectLink={{
+    github: "https://github.com/satyamrathod45/onepiece",
+    live: "https://satyamrathod45.github.io/onepiece",
+  }}
+/>
 <ProjectCard
   image={decimalpass}
   badge="Personal"
@@ -51,16 +60,7 @@ const Project = () => {
   }}
 />
 
-<ProjectCard
-  image={onepiece}
-  badge="Showcase"
-  title="OnePiece Showcase"
-  description="A themed showcase website inspired by One Piece, featuring animations, character sections, and immersive visuals."
-  projectLink={{
-    github: "https://github.com/satyamrathod45/onepiece",
-    live: "https://satyamrathod45.github.io/onepiece",
-  }}
-/>
+
 
 <ProjectCard
   image={decimal}

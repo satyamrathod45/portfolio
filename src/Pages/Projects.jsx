@@ -44,6 +44,7 @@ const Project = () => {
   badge="Showcase"
   title="OnePiece Showcase"
   description="A themed showcase website inspired by One Piece, featuring animations, character sections, and immersive visuals."
+  badgeColor="bg-green-600"
   projectLink={{
     github: "https://github.com/satyamrathod45/onepiece",
     live: "https://satyamrathod45.github.io/onepiece",

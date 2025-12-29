@@ -36,7 +36,7 @@ const Project = () => {
   description="An anime streaming style platform with a modern OTT-like UI, dynamic routing, and API-based content rendering."
   projectLink={{
     github: "https://github.com/satyamrathod45/DecimalTv",
-    live: "https://satyamrathod45.github.io/DecimalTv",
+    live: "https://satyamrathod45.github.io/decimalTv",
   }}
 />
 
@@ -46,8 +46,8 @@ const Project = () => {
   title="DecimalPass"
   description="A digital pass and identity management system focused on secure access, clean UX, and scalable architecture."
   projectLink={{
-    github: "https://github.com/satyamrathod45/decimalPass",
-    live: "https://satyamrathod45.github.io/decimalPass",
+    github: "https://github.com/satyamrathod45/DecimalPass",
+    live: "https://satyamrathod45.github.io/DecimalPass",
   }}
 />
 

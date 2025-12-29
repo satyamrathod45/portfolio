@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f7efe4;
+    color: #875a46;
+    font-family: "Fraunces", serif;
+
+}
+
+span {
+    font-family: "Fraunces", serif;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: none;
+}

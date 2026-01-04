@@ -17,7 +17,6 @@ const App = () => {
 
       <Routes>
         <Route path="/" element={<PageTransition><Hero /></PageTransition>} />
-        {/* example routes */}
         <Route path="/projects" element={<Project />} />
         <Route path="/skills" element={<Skills />} />
         <Route path="/about" element={<About />} />

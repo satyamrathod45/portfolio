@@ -28,7 +28,6 @@ const FloatingCircle = ({
   route
 }) => {
   return (
-    /* FLOATING LAYER (ONLY Y ANIMATION) */
     <Link to={route}>
       {" "}
       <motion.div
@@ -40,7 +39,6 @@ const FloatingCircle = ({
         }}
         className={`absolute ${position} z-[9999]`}
       >
-        {/* HOVER LAYER (SCALE + VARIANTS) */}
         <motion.div
           variants={hoverVariants}
           initial="initial"
@@ -56,21 +54,18 @@ const FloatingCircle = ({
           origin-center
         "
         >
-          {/* MASK */}
           <div className="relative w-full h-full rounded-full ">
-            {/* THEME COLOR */}
+
             <motion.div
               variants={colorVariants}
               transition={fadeFast}
               className={`absolute inset-0 ${themeColor} rounded-full sm:p-0 p-5`}
             />
 
-            {/* MOBILE NAV TEXT */}
             <div className="sm:hidden absolute bottom-6 w-full text-center flex justify-center items-center">
               <p className="text-md font-semibold text-[#85402D]">{text}</p>
             </div>
 
-            {/* IMAGE */}
             <motion.img
               src={image}
               alt=""

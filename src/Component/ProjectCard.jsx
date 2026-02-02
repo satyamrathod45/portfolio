@@ -52,7 +52,6 @@ const ProjectCard = ({
         cursor-pointer
       "
     >
-      {/* IMAGE */}
       <div className="relative rounded-xl overflow-hidden">
         <motion.img
           src={image}
@@ -76,7 +75,6 @@ const ProjectCard = ({
         )}
       </div>
 
-      {/* TEXT */}
       <div className="mt-4 space-y-1">
         <h3 className="text-lg font-bold text-[#85402D]">
           {title}
@@ -85,8 +83,6 @@ const ProjectCard = ({
           {description}
         </p>
       </div>
-
-      {/* ACTIONS (ALWAYS VISIBLE) */}
       <div className="mt-4 flex gap-4 items-center">
         {projectLink?.github && (
           <a

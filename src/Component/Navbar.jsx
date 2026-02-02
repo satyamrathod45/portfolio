@@ -7,7 +7,6 @@ import { MdMusicNote } from "react-icons/md";
 
 import themeMusic from "../assets/music/theme.mp3";
 
-/* ---------- Animation ---------- */
 const menuVariants = {
   hidden: { x: "100%", opacity: 0 },
   visible: {
@@ -42,12 +41,10 @@ const Navbar = () => {
   const [playing, setPlaying] = useState(false);
   const audioRef = useRef(null);
 
-  /* lock scroll when menu open */
   useEffect(() => {
     document.body.style.overflow = open ? "hidden" : "auto";
   }, [open]);
 
-  /* play / pause music */
   const toggleMusic = () => {
     if (!audioRef.current) return;
 
@@ -65,8 +62,7 @@ const Navbar = () => {
 
   return (
     <nav className="w-full px-6 py-4 flex items-center justify-between relative z-50">
-      
-      {/* LOGO */}
+
       <Link
         to="/"
         className="text-xl font-bold tracking-wide uppercase text-[#85402D]"
@@ -74,10 +70,8 @@ const Navbar = () => {
         satyam<span className="font-normal">.work</span>
       </Link>
 
-      {/* RIGHT CONTROLS */}
       <div className="flex items-center gap-4">
 
-        {/* MUSIC BUTTON */}
         <motion.button
           onClick={toggleMusic}
           variants={musicVariants}
@@ -98,7 +92,6 @@ const Navbar = () => {
           <MdMusicNote size={26} />
         </motion.button>
 
-        {/* MOBILE BUTTON */}
         <button
           onClick={() => setOpen(true)}
           className="md:hidden text-[#85402D]"
@@ -107,10 +100,8 @@ const Navbar = () => {
         </button>
       </div>
 
-      {/* AUDIO */}
       <audio ref={audioRef} loop src={themeMusic} />
 
-      {/* ================= DESKTOP MENU ================= */}
       <ul className="hidden md:flex gap-8 text-[#85402D] font-medium">
         {[
           ["Home", "/"],
@@ -141,7 +132,6 @@ const Navbar = () => {
         ))}
       </ul>
 
-      {/* ================= MOBILE MENU ================= */}
       <AnimatePresence>
         {open && (
           <motion.div

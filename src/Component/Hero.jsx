@@ -15,7 +15,6 @@ import chopper from "../assets/luffy/chopper.png";
 
 import FloatingCircle from "./FloatingCircle";
 
-/* transitions */
 const fadeFast = { duration: 0.2 };
 const luffyAngry = ""
 
@@ -34,7 +33,6 @@ const Hero = () => {
     <>
     <section className="relative w-full min-h-screen bg-[#FBF2E6] overflow-hidden flex items-center justify-center px-4">
 
-      {/* CENTER CIRCLE */}
       <motion.div
         animate={{ scale: active !== "default" ? 1.04 : 1 }}
         transition={SCALE_FAST}
@@ -49,7 +47,6 @@ const Hero = () => {
           flex items-center justify-center
         "
       >
-        {/* LAYERED LUFFY IMAGES */}
         <div className="absolute inset-0">
           <motion.img
             src={luffyHappy}
@@ -83,7 +80,6 @@ const Hero = () => {
           />
         </div>
 
-        {/* TEXT BADGE */}
         {active !== "default" && (
           <motion.div
             initial={{ opacity: 0, scale: 0.98 }}
@@ -108,7 +104,6 @@ const Hero = () => {
         )}
       </motion.div>
 
-      {/* FLOATING CIRCLES */}
       <FloatingCircle
         position="top-[18%] right-[12%] sm:right-[18%] lg:right-[22%]"
         themeColor="bg-green-300"
@@ -148,8 +143,6 @@ const Hero = () => {
         route={"/about"}
       />
 
-      {/* FLOATING AMBIENT DOTS */}
-      {/* DECORATIVE FLOATING CIRCLES (SHOWCASE ONLY) */}
 <DecorativeCircle
   position="top-[12%] left-[10%]"
   size={90}
@@ -193,8 +186,7 @@ const Hero = () => {
 />
 
     </section>
-    
-{/* HERO TEXT */}
+
 <div
   className="
     absolute

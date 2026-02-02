@@ -15,7 +15,7 @@ const pageVariants = {
     perspective: 1200,
     transition: {
       duration: 0.7,
-      ease: [0.25, 0.8, 0.25, 1], // smooth page flip
+      ease: [0.25, 0.8, 0.25, 1], 
     },
   },
 
